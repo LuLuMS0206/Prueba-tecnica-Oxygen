@@ -1,0 +1,26 @@
+.found{
+    background-color: #2E0039;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    @media (max-width: 740px) {
+        margin-top: 5rem;
+        bottom: auto;
+        }
+}
+
+.text-terms{
+    color: #FFFFFF;
+}
+
+.text-privacy{
+    color: #FFFFFF;
+    margin-left: 3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}

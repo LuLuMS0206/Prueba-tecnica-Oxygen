@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+.content-max{
+    max-width: 44.8125rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}

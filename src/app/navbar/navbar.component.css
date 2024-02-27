@@ -1,0 +1,15 @@
+.content-unit{
+    display: flex;
+    align-items: center;
+    color: #2E0039;
+}
+
+.text-unit{
+    margin-left: 1rem;
+    color: #2E0039;
+    font-weight: 900;
+}
+
+.navbar{
+    box-shadow: 0px 2px 4px 0px #00000040;
+}

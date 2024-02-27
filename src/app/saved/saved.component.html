@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+<div class="content-max">
+    <div class="text-saved">
+      saved
+    </div>
+  
+    <!-- Sección para los resultados guardados -->
+    <div class="rectangles">
+      <div *ngFor="let resultado of savedResults; let i = index" class="gropup-{{ i + 1 }}-rectangle">
+        <div class="rectangle">
+          {{ resultado.literal }} {{ resultado.resultado }} → {{ resultado.literalResultado }}
+          <span class="material-symbols-outlined close" (click)="borrarResultado(i)">
+            close
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>

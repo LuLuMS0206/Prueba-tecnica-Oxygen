@@ -1,0 +1,58 @@
+<!-- section convert -->
+<div class="content-max convert">
+
+    <!-- section content convert -->
+    <div class="content-convert">
+
+        <!-- title convert -->
+        <p class="title-convert">convert</p>
+        <!-- end title convert -->
+
+        <!-- section groups convert -->
+        <div class="content-group">
+            <div class="group-1">
+                <div class="group-1-flex">
+                    <select class="opciones" id="opciones" name="opciones" [(ngModel)]="seleccion" (change)="calcularConversion()">
+                        <option *ngFor="let opcion of opciones" [value]="opcion.value">{{ opcion.label }}</option>
+                      </select>
+<div class="icon-arrow">
+    <span class="material-symbols-outlined arrow">
+        sync_alt
+        </span>
+</div>
+                    
+                </div>
+                <div class="input">
+                    <div class="content-input">
+                        <input class="result-convert" type="text" name="valor" [(ngModel)]="valor" (input)="calcularConversion()">
+                    </div>
+                    
+                    <div class="input-text">
+                        {{literal}}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="group-2">
+<div class="favorite" (click)="guardarResultadoEnLocalStorage()">
+    <span class="material-symbols-outlined heart">
+        favorite
+        </span>
+</div>
+                
+
+                <!-- result -->
+                <div class="result">
+                    {{resultado}} {{literalResultado}}
+                </div>
+                <!-- end result -->
+            </div>
+        </div>
+        <!-- end section groups convert -->
+
+    </div>
+    <!-- section content convert -->
+</div>
+<!-- end section convert -->
